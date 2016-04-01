@@ -19,4 +19,6 @@ quit - will exit the program
 This program has the framework layed down to implement different directories and directory navigation
 on the img file.  I didn't finish it however, but it is there.
 
+PS Dont understand why the spacing and indentation is really weird, everything was converted to spaces before upload.
+
 Enjoy! 
