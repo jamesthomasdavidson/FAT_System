@@ -8,7 +8,7 @@ unzip the assignment and type "make shell" in terminal.
 run the program by entering in ./diskshell.  you can run an optional arguement for the img file,
 default img file is in img1/disk1.img.
 
-commands are:
+**Commands**:
 
 disklist - will list out contents of root directory
 
