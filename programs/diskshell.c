@@ -56,15 +56,15 @@ bool runCommands(char** args)
     char* fileToCopy = args[1];
     char* destinationDirectory = args[2];
 
-    if(!strcmp(args[0], "list")){
+    if(!strcmp(args[0], "disklist")){
         printDirectoryInfo(SB, TREE->currentDirectory);
-    }else if(!strcmp(args[0], "info")){
+    }else if(!strcmp(args[0], "diskinfo")){
         printSuperBlockInfo(SB);
         printFileAllocationTableInfo(FAT);
-    }else if(!strcmp(args[0], "copytolocal")){
+    }else if(!strcmp(args[0], "diskget")){
         if(!fileToCopy || !destinationDirectory){ printf("Invalid arguements\n"); return TRUE;}
         copyFileToLocal(SB, TREE, fileToCopy, destinationDirectory /* On IMG file */);
-    }else if(!strcmp(args[0], "copytoimg")){
+    }else if(!strcmp(args[0], "copyput")){
         if(!fileToCopy || !destinationDirectory){ printf("Invalid arguements\n"); return TRUE; }
         copyFileToIMG(SB, FAT, TREE, fileToCopy, "" /* On local machine */);
     }else if(!strcmp(args[0], "quit")){
